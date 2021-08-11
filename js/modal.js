@@ -245,8 +245,8 @@ $(".modal-body > form").submit(formValidation);
  * @type {{ [key:string]: (value:string) => boolean }}
  */
  const validator = {
-  "first": (value) => rules(value, "REQUIRED") && rules(value, "STRING") && rules(value, "MIN", 2),
-  "last": (value) => rules(value, "REQUIRED") && rules(value, "STRING") && rules(value, "MIN", 2),
+  "first": (value) => rules(value, "REQUIRED") && rules(value, "STRING") && rules(value, "MIN", 1),
+  "last": (value) => rules(value, "REQUIRED") && rules(value, "STRING") && rules(value, "MIN", 1),
   "email": (value) =>  rules(value, "REQUIRED") && rules(value, "STRING") && rules(value, "EMAIL"),
   "birthdate": (value) => rules(value, "REQUIRED"),
   "quantity": (value) => rules(value, "REQUIRED") && rules(value, "MIN", 0),
